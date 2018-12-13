@@ -116,6 +116,7 @@ get_header(); ?>
                                 <div class="px-sm-6 px-lg-8 px-xl-10">
                                     <h2 class="mb-4 fw-medium text-white text-uppercase"><?php the_field("service_title");?></h2>
                                     <p class="mb-0 fs--1 text-white"><?php the_field("service_intro_text");?></p>
+									<div class="clear"></div>
                                 </div>
                             </div>
                         </div>
@@ -244,6 +245,7 @@ get_header(); ?>
                 </div>
             </section>
             <!-- End of Section -->
+			<div class="clear"></div>
         </main>
         <!-- End of Main Content -->
 

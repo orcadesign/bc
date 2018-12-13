@@ -4505,7 +4505,7 @@ textarea.form-control
         -ms-flex: 0 0 33%;
             flex: 0 0 33%;
     }
-	li.col-lg-4 {
+	li.col-lg-4, li.col-md-6, li.pr-lg-5  {
 		float: left;
 		list-style-type: decimal-leading-zero;
 		font-size: 1.4em;
@@ -8170,13 +8170,13 @@ h1,
 h2,
 .h2
 {
-    font-size: 2.25rem;
+    font-size: 2.75rem;
 }
 
 h3,
 .h3
 {
-    font-size: 1.96875rem;
+    font-size: 2.26875rem;
 }
 
 h4,
@@ -15573,8 +15573,8 @@ a.text-blue-light:focus
     right: 0;
     bottom: 0;
     left: 0;
-	height: 28vw;
-	min-height: 20em;
+	height: 22vw;
+	min-height: 27em;
     overflow: hidden; 
 
     margin: 0;
@@ -15670,7 +15670,7 @@ a.text-blue-light:focus
 
     content: '';
 
-    background-color: rgba(142,228,175, .97);
+    background-color: #03A66D
 }
 
 /* ==========================================================================
@@ -15915,10 +15915,10 @@ ul li a.active
 {
     transition-delay: .2s;
 }
-.menu-toggle.open .cross span
+/*.menu-toggle.open .cross span
 {
     background: #05386b;
-}
+}*/
 .menu-toggle.open .cross span:nth-child(1)
 {
     height: 37px;
@@ -16189,7 +16189,7 @@ ul li a.active
     width: 100%;
     height: 100%;
 
-    background: rgba(142,228,175, .995);
+    background: rgba(3, 166, 109, 1)!important
 }
 .spyre-navbar-overlay.open
 {
@@ -22728,10 +22728,190 @@ section.text-center#contact p.mb-4 {
  * It will be merged with the default style.
  */
 
-.page-template-contact-page .menu-toggle span {
-	    background-color: #05386b !important
+/* contact */
+.page-template-contact-page .col-lg-4  {
+	    background-color: #FFAF3B !important
+}
+.page-template-contact-page .container .map {
+    position: absolute;
+    height: 100vh;
+    width: calc(50vw - 6em);
+    left: 0px;
+    top: 0;
+    z-index: 1;
 }
 
+.page-template-contact-page .col-md-10.contact-form {
+    position: absolute;
+    width: calc(50vw - 10em);
+    left: 50vw;
+    top: 10em;
+    z-index: 999;
+}
+.text-center#contact h2 {
+	margin-bottom: 1.5rem;
+}
+.text-center#contact p.address {
+	margin: 0 0 .5em;
+}
+ 
+.send-btn .wpcf7-form-control[type=submit], div.send-btn {
+	color: white;
+}
+.page-template-contact-page  div.send-btn {
+	border-color: #605AC3;
+    background-color: #605AC3;
+	color: white;
+}
+
+.page-template-contact-page h1 {
+	color: #605AC3;
+}
+
+.page-template-contact-page h1 span,
+.page-template-services-page h1 span,
+.page-template-about-page .col-lg-10 h1 span{
+	display: block;
+	color: #027A50;
+	font-size: 135%
+}
+
+
+.page-template-contact-page .col-md-10.contact-form  .wpcf7-form-control::-webkit-input-placeholder{
+    opacity: .7; 
+    color: #605AC3;
+}
+.page-template-contact-page .col-md-10.contact-form  .wpcf7-form-control::-moz-placeholder{
+    opacity: .7;
+    color: #605AC3;
+}
+.page-template-contact-page .col-md-10.contact-form  .wpcf7-form-control:-ms-input-placeholder{
+    opacity: .7; 
+    color: #605AC3;
+}
+
+.page-template-contact-page .col-md-10.contact-form  .wpcf7-form-control::placeholder{
+    opacity: .7; 
+    color: #605AC3;
+}
+
+img.d-lg-block {
+    background: black;
+    padding: 0.4em;
+}
+.position-relative.contact {
+	min-height: 100vh;
+}
+/* services */
+.page-template-services-page .col-lg-4  {
+	background-color: #605AC3 !important;
+	padding: 6em 3em 3em;
+}
+
+.page-template-services-page .col-lg-4 h1 span {
+	color: #fff;
+}
+.page-template-services-page .col-lg-8 h1 span {
+	color: #605AC3;
+}
+.page-template-services-page div.img-left, .page-template-services-page div.img-right {
+    position: absolute;
+    width: calc(50vw - 0px);
+    opacity: 0.2;
+}
+.page-template-services-page  div.img-left img,
+.page-template-services-page  div.img-right img {
+	width: 100%;
+	max-width: 100%;
+	object-fit: cover;
+}
+.page-template-services-page div.img-left {
+    left: 0;
+    top: 50vh;
+    z-index: 1;
+}
+.page-template-services-page  div.img-right  {
+	right: 0;
+	z-index: 1;
+	top: 0;
+}
+.page-template-services-page  div.img-right img {
+	height: 100vh;
+}
+.page-template-services-page  div.img-left img {
+	height: 50vh;
+}
+
+/*about*/
+.page-template-about-page .col-lg-10 h1 {
+	text-align: right;
+}
+.page-template-about-page .col-lg-10 h1 span {
+	color: #FF9866;
+}
+.page-template-about-page .col-lg-4.col-xl-8.bg-secondary.ext-r.pt-0.pt-lg-7.pb-1.pb-lg-3 {
+	background: #5286B9 !important;
+}
+.page-template-about-page .col-lg-4.col-xl-8 > div {
+	position: relative;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+.page-template-about-page .col-lg-4.col-xl-8 div p {
+	color: #063562;
+	font-weight: bold;
+	text-transform: uppercase;
+	letter-spacing: .1em;
+	font-size: 1.2rem;
+	line-height: 2em;
+	margin-top: -1em;
+	padding-left: 4em;
+}
+.p-3.profile {
+	overflow: hidden;
+	clear: both;
+	margin-bottom: 6rem;
+}
+.p-3.profile h2 {
+	margin: 2em 0;
+}
+.p-3.profile .container .col-lg-4 {
+	float: left;
+}
+
+.p-3.profile .container .col-lg-4 div.inner {
+	max-width: 88%;
+	margin: auto;
+	-webkit-box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, .15);
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, .15);
+}
+.p-3.profile .container .col-lg-4 div.inner .content {
+	padding: 1.6em;
+}
+.p-3.profile .col-lg-4 img {
+	width: 100%;
+	object-fit: cover;
+	height: 20em;
+}
+.p-3.profile .col-lg-4 div h4 {
+	margin: 0 0 1rem;
+	text-transform: uppercase;
+	letter-spacing: .1em;
+	font-size: 1rem;
+}
+.p-3.profile .col-lg-4 div p, 
+.p-3.profile .col-lg-4 div a {
+	font-size: .85em;
+}
+.p-3.profile .col-lg-4 div p {
+	color: #063562;
+	margin: 1em 0 0;
+	line-height: 1.4em;
+}
+.clear {
+	clear: both;
+}
 
 
 /*# sourceMappingURL=theme.css.map */

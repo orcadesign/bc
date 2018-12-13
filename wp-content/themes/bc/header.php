@@ -43,7 +43,7 @@
         <header class="spyre-navbar navbar navbar-expand-lg bg-secondary fixed-top align-items-center" data-transparent data-text-color="#ffffff">
             <div class="container">
                 <a class="navbar-brand mr-lg-5 mr-xl-7" href="/pages/index.html">
-                    <img src="<?=$theme?>/assets/images/logo-simple.svg" class="d-none d-lg-block" alt="Spyre" width="183" />
+                    <img src="<?=$theme?>/assets/images/logogreen.svg" class="d-none d-lg-block" alt="Spyre" width="183" />
                 </a>
 
 
@@ -85,62 +85,7 @@
                             </nav>
                         </div>
         
-                        <div class="col-lg-7 col-xl-8 d-none d-md-block">
-                            <div class="d-flex flex-column h-100">
-                                <div class="d-flex h-100">
-                                    <div class="align-self-center">
-                                        <div class="text-uppercase"
-                                            data-background-text="communication"
-                                            data-color="#7079a2"
-                                            data-opacity="0.02"
-                                            data-font-size="85px"
-                                            data-font-weight="500"
-                                            data-offset-x="-5%"
-                                            data-letter-spacing="5px"
-                                        ></div>
-                                        <div class="text-uppercase"
-                                            data-background-text="planning"
-                                            data-color="#7079a2"
-                                            data-opacity="0.04"
-                                            data-font-size="175px"
-                                            data-font-weight="500"
-                                            data-offset-x="29%"
-                                            data-padding="7vh 0 2vh 0"
-                                            data-letter-spacing="5px"
-                                        ></div>
-                                        <div class="text-uppercase"
-                                            data-background-text="delivering"
-                                            data-color="#7079a2"
-                                            data-opacity="0.03"
-                                            data-font-size="140px"
-                                            data-font-weight="500"
-                                            data-offset-x="15%"
-                                            data-letter-spacing="5px"
-                                        ></div>
-                                    </div>
-                                </div>
-                                
-                                <div class="mt-auto">
-                                    <ul class="nav flex-nowrap float-right">
-                                        <li class="nav-item">
-                                            <a class="nav-link px-2" href="#" target="_blank">
-                                                <i class="zmdi zmdi-twitter text-white"></i>
-                                            </a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link px-2" href="#" target="_blank">
-                                                <i class="zmdi zmdi-instagram text-white"></i>
-                                            </a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link px-2" href="#" target="_blank">
-                                                <i class="zmdi zmdi-facebook-box text-white"></i>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
+                      
                     </div>
                 </div>
             </div>
