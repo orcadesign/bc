@@ -32,23 +32,25 @@ get_header(); ?>
 						<div class="row align-items-center h-100">
 							<div class="col-lg-10 pb-3">
 								<h1 class="mb-5 fw-medium text-uppercase">Our<span>Processes</span></h1>
+								
 								<?php if( have_rows('processes', 14) ): ?>
-									<ol>
+									<div class="owl-carousel" data-carousel-options='{"items":1,"loop":true,"responsive":{"0":{"dots":true,"nav":false},"992":{"dots":false,"nav":true}}}'>
 
 										<?php while( have_rows('processes', 14) ): the_row(); ?>
 
-										<li class="pr-lg-5">	
+										<div>	
 											<h2 class="mb-4 fs-1 fw-medium text-uppercase"><?php the_sub_field("process_title", 14);?></h2>
 											<p class="fs--1"><?php the_sub_field("process_content", 14);?></p>
-										</li>	
+										</div>	
 											<!-- ./end slide -->
 
 											<?php endwhile; ?>
 
 										<!-- ./ end slick slider for team list -->
-									</ol>
+									</div>
 
 								<?php endif; ?>
+									
 								<!-- ./end repeater -->
 							</div>
 						</div>

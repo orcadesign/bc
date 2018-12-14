@@ -40,10 +40,11 @@
 <div id="page" class="hfeed site">
 
 	 <!-- Header -->
-        <header class="spyre-navbar navbar navbar-expand-lg bg-secondary fixed-top align-items-center" data-transparent data-text-color="#ffffff">
+        <header class="spyre-navbar navbar navbar-expand-lg absolute-top bg-secondary align-items-center" data-transparent data-text-color="#ffffff">
+			<!-- replaced the class "fixed-top" from header with "absolute-top"-->
             <div class="container">
                 <a class="navbar-brand mr-lg-5 mr-xl-7" href="/pages/index.html">
-                    <img src="<?=$theme?>/assets/images/logogreen.svg" class="d-none d-lg-block" alt="Spyre" width="183" />
+                    <img src="<?=$theme?>/assets/images/logo-final.svg" class="d-none d-lg-block" alt="Spyre" width="183" />
                 </a>
 
 
