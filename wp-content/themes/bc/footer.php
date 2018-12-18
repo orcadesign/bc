@@ -59,6 +59,7 @@
         <script src="<?=$theme?>/assets/js/jquery.min.js"></script>
         <script src="<?=$theme?>/assets/js/popper.min.js"></script>
         <script src="<?=$theme?>/assets/js/bootstrap.min.js"></script>
+        <script src="<?=$theme?>/assets/js/index-dist.js"></script>
 
         <!-- Vendor Javascripts -->
         <script src="<?=$theme?>/assets/js/rellax.min.js"></script>
