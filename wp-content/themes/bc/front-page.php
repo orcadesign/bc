@@ -80,20 +80,21 @@ get_header(); ?>
 							<div class="row">
 								
 							<?php if( have_rows('processes') ): ?>
-								<ol>
+								<div class="owl-carousel" data-carousel-options='{"items":2,"loop":true,"responsive":{"0":{"dots":true,"nav":false},"992":{"dots":false,"nav":true}}}'>
 
-									<?php while( have_rows('processes') ): the_row(); ?>
+										<?php while( have_rows('processes', 14) ): the_row(); ?>
 
-									<li class="col-md-6 col-lg-4 pr-lg-5">	
-										<h2 class="mb-4 fs-1 fw-medium text-uppercase"><?php the_sub_field("process_title");?></h2>
-										<p class="fs--1"><?php the_sub_field("process_content");?></p>
-									</li>	
-										<!-- ./end slide -->
+										<div>	
+											<h2 class="mb-4 fs-1 fw-medium text-uppercase"><?php the_sub_field("process_title", 14);?></h2>
+											<p class="fs--1"><?php the_sub_field("process_content", 14);?></p>
+										</div>	
+											<!-- ./end slide -->
 
-										<?php endwhile; ?>
+											<?php endwhile; ?>
 
-									<!-- ./ end slick slider for team list -->
-								</ol>
+										<!-- ./ end slick slider for team list -->
+									</div>
+
 
 							<?php endif; ?>
 							<!-- ./end repeater -->
