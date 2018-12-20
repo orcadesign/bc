@@ -2089,7 +2089,7 @@ pre code {
   height: calc(2.9375rem + 2px);
   padding: .8rem .75rem;
   transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
-  color: #242635;
+  color: #95ACA3;
   border: 1px solid #cdced3;
   border-radius: 0;
   background-color: transparent;
@@ -2105,7 +2105,7 @@ pre code {
 .form-control:focus,
 .wpcf7-form-control:focus,
 .wpcf7-form div.left .wpcf7-form-control:focus {
-  color: #242635;
+  color: #95ACA3;
   outline: 0;
   background-color: transparent;
   border-color: #FDE5DB; }
@@ -2212,7 +2212,8 @@ select.form-control:focus::-ms-value {
   z-index: 0 !important;
   background: #e5e5e5;
   border: none;
-  padding: 3em 3em 3em 5em; }
+  padding: 3em 3em 3em 5em;
+  width: calc(100% + 3em); }
 
 .wpcf7-form div.right textarea:focus {
   border: 2px solid #242635; }
@@ -2225,7 +2226,7 @@ select.form-control:focus::-ms-value {
 
 .wpcf7-form div.left .wpcf7-form-control {
   border: none;
-  border-bottom: 2px solid black;
+  border-bottom: 2px solid #95ACA3;
   border-radius: 1px; }
 
 .wpcf7-form-control[type='submit'] {
@@ -16342,6 +16343,18 @@ section.text-center#contact p.mb-4 {
 .page-template-contact-page .col-md-10.contact-form .wpcf7-form-control::placeholder {
   opacity: .7;
   color: #FDE5DB; }
+
+.page-template-contact-page .col-md-10.contact-form .wpcf7-form-control.wpcf7-textarea::-webkit-input-placeholder {
+  color: #242635; }
+
+.page-template-contact-page .col-md-10.contact-form .wpcf7-form-control.wpcf7-textarea::-moz-placeholder {
+  color: #242635; }
+
+.page-template-contact-page .col-md-10.contact-form .wpcf7-form-control.wpcf7-textarea:-ms-input-placeholder {
+  color: #242635; }
+
+.page-template-contact-page .col-md-10.contact-form .wpcf7-form-control.wpcf7-textarea::placeholder {
+  color: #242635; }
 
 .position-relative.contact {
   min-height: 100vh; }
